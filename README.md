@@ -41,7 +41,15 @@ If you have Docker, you can just do this:
 | `GET` | `/sectors` | No | List of supported industries |
 | `GET` | `/analyze/{sector}` | Yes | Run the trade analysis |
 
-Full interactive docs available at `http://localhost:8000/docs` after starting the 
+Full interactive docs available at `http://localhost:8000/docs`.
+
+### How to use Swagger UI:
+1.  Go to the `/auth/token` endpoint in the docs and click **Try it out**.
+2.  Enter a username and click **Execute**.
+3.  Copy the `access_token` from the response.
+4.  Scroll to the top and click the 🔓 **Authorize** button.
+5.  Paste your token into the **Value** field and click **Authorize**.
+6.  Now you can use the `/analyze/{sector}` endpoint!
 ## how to use
 
 It uses JWT tokens, so you have to "login" first to get one.
