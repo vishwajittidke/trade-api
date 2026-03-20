@@ -63,5 +63,3 @@ It uses JWT tokens, so you have to "login" first to get one.
 - **Rate Limit**: 10 requests per minute per user.
 - **Cache**: It caches results for 30 mins so we don't spam the Gemini API.
 - **Sessions**: Basic in-memory session tracking.
-
-License: None, do whatever you want with it.
