@@ -32,6 +32,16 @@ If you have Docker, you can just do this:
    docker run -p 8000:8000 --env-file .env trade-api
    ```
 
+## endpoints
+
+| Method | Path | Auth | Description |
+|---|---|---|---|
+| `GET` | `/health` | No | System health check |
+| `POST` | `/auth/token` | No | Get your access token |
+| `GET` | `/sectors` | No | List of supported industries |
+| `GET` | `/analyze/{sector}` | Yes | Run the trade analysis |
+
+Full interactive docs available at `http://localhost:8000/docs` after starting the 
 ## how to use
 
 It uses JWT tokens, so you have to "login" first to get one.
